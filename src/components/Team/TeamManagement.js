@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import './TeamManagement.css'
 import { Redirect } from 'react-router-dom'
 import TeamMember from './TeamMember'
+import Heroes from '../Heroes/Heroes'
 class TeamManagement extends Component {
     componentDidMount() {
 
@@ -32,10 +33,12 @@ class TeamManagement extends Component {
                                             <div className='teamManagement-team-info'>
                                                 <img src={team.team[0].team_image} className='team-photo-container' />
                                             </div>
-                                            <Link to={`/usersList/${team.team[0].id}`}> <div>Add Members to Your Team</div> </Link>
                                             {(team.team.length) ? <TeamMember teamId={team.team[0].id} /> : null}
                                         </div>
                                     </div>
+                                </div>
+                                <div className='hero-container'>
+                                    <Heroes className='teamManagement-heroes'></Heroes>
                                 </div>
                             </div>
                             <div className='teamManagement-user-info-top-container'>

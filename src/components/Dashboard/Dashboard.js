@@ -47,13 +47,12 @@ class Dashboard extends Component {
                                 </div>
                             </div>
                         </div>
-                        <Link to='/teamPage'><button className='dashboard-links'> My Teams</button></Link>
+                        <Link className='link' to='/teamPage'><button className='dashboard-links'> My Teams</button></Link>
                         <button className='dashboard-links'> My Messages </button>
                         <button className='dashboard-links'> Team Management </button>
                         <button className='dashboard-links'> Team Search </button>
                     </div>
-                    <div className='dashboard-menu-options'>
-                        Your Heroes
+                    <div className='heroes-container-dash'>
                         <TeamMember/>
                     </div>
                 </div>

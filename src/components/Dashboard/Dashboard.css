@@ -19,7 +19,7 @@
 
 .dashboard-user-contents-container {
     margin: 0px;
-    width: 620px;
+    width: 500px;
     height: 800px;
     background-color: rgba(49, 46, 124, 0);
     display: flex;
@@ -117,6 +117,18 @@
     color: white;
 }
 
+.heroes-container-dash{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-width: .5px;  
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: px;
+ }
+
 @media screen and (max-width: 768px) {
     .dashboard-container{
         width: 475px;
@@ -158,3 +170,7 @@
     background-color: rgba(0, 0, 0, 0.856);
 }
 }
+
+
+
+

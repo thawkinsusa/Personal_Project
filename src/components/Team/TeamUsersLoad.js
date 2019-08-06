@@ -23,7 +23,7 @@ class TeamUsersLoad extends Component {
     }
 
     render() {
-
+        console.log('props on already added hereos', this.props);
         let { users } = this.state
 
         return (
