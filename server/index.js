@@ -8,6 +8,7 @@ const sc = require('./controllers/stripeController');
 const initSession = require('./middleware/initSession');
 const path = require('path');
 const authCheck = require('./middleware/authCheck');
+const hc = require('./controllers/heroController')
 const { SERVER_PORT, SESSION_SECRET, CONNECTION_STRING } = process.env;
 
 
@@ -49,8 +50,14 @@ app.delete('/api/deleteTeamMember/:userId', tc.deleteTeamMember);
 app.get('/api/allTeams', tc.getAllTeams);
 app.get('/api/teamMembers/:id', tc.getTeamMembers);
 app.put('/api/addTeamMember', tc.addTeamMember)
-//stripe
+// stripe
 app.post('/api/payment', sc.pay)
+// heroes
+app.get('/api/teamHeroesByUserId/:id', hc.getHeroesTeamByUserId);
+app.delete('/api/deleteTeamHero/:heroId', hc.deleteTeamHero);
+app.get('/api/allHeroes', hc.getAllHeroes);
+app.get('/api/heroById/:id', hc.getHeroesById);
+app.put('/api/addHeroMember', hc.addTeamHero)
 
 
 

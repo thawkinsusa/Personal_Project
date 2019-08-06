@@ -1,5 +1,6 @@
-insert into team_junction(user_id, team_id, hero_id)
-VALUES($1, $2, $3);
+delete from team_junction
+where hero_id = $1
+and team_id = $2;
 
 SELECT
 heroes.*

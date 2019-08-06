@@ -6,15 +6,15 @@ class Donate extends Component {
   constructor() {
     super()
     this.state = {
-      amount: 0
+      amount: ''
     }
   }
 
-  onOpened=()=>{
+  onOpened = () => {
     console.log('this is opened')
   }
 
-  onClosed=()=>{
+  onClosed = () => {
     console.log('this is closed')
   }
 
@@ -33,30 +33,32 @@ class Donate extends Component {
   render() {
 
     return (
-      <div style={{display:'flex',flexDirection:'column', alignItems:'center', marginTop:'50px'}}>
-        <StripeCheckout
-          name='CLass' 
-          image={imageUrl}
-          description='This is stuff going beneath the header' 
-          stripeKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY} 
-          token={this.onToken} 
-          amount={this.state.amount} 
-          currency="USD" 
- 
-          panelLabel="Submit Payment" 
-          locale="en"
-          opened={this.onOpened} 
-          closed={this.onClosed} 
-          allowRememberMe 
-          billingAddress={false}
-        
-          zipCode={false}
-        >
-          {/* <button>Checkout</button> */}
-        </StripeCheckout>
-        <input value={this.state.amount}
-        type='number'
-        onChange={e=>this.setState({amount:+e.target.value})}/>
+      <div className='stripe-container'>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px' }}>
+          <StripeCheckout
+            name='CLass'
+            image={imageUrl}
+            description='This is stuff going beneath the header'
+            stripeKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}
+            token={this.onToken}
+            amount={this.state.amount}
+            currency="USD"
+
+            panelLabel="Submit Payment"
+            locale="en"
+            opened={this.onOpened}
+            closed={this.onClosed}
+            allowRememberMe
+            billingAddress={true}
+
+            zipCode={true}
+          >
+            {/* <button>Checkout</button> */}
+          </StripeCheckout>
+          <input value={this.state.amount}
+            type='number'
+            onChange={e => this.setState({ amount: +e.target.value })} />
+        </div>
       </div>
     )
   }

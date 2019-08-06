@@ -28,11 +28,12 @@ class Nav extends Component {
                 <div className='header'>
                     <div className='logo'>Team.Me</div>
                     <div className='menu-options'>
-                        <Link to='/signup'><button className='nav-link'> Register </button></Link>
-                        <Link to='/dashboard'><button className='nav-link'> Dashboard </button></Link>
-                        <Link to='/TeamPage'><button className='nav-link'> Team Page </button></Link>
+                        <Link to='/signup' className='link-buttons'><button className='nav-link'> Register </button></Link>
+                        <Link to='/dashboard' className='link-buttons'><button className='nav-link'> Dashboard </button></Link>
+                        <Link to='/TeamPage' className='link-buttons'><button className='nav-link'> Team Page </button></Link>
                         <Link to={`/TeamManagement/${this.props.state.team.team[0] ? this.props.state.team.team[0].id : 999999}`}><button className='nav-link'>TeamManagement</button></Link>
-                        <Link to='/login'><button className='nav-link'> Login </button></Link>
+                        <Link to='/donate' className='link-buttons'><button className='nav-link'> Donate! </button></Link>
+                        <button onClick={this.localLogOut} className="nav-link-menu">Logout</button>
                     </div>
                     <button className='menu-btn-content' onClick={this.toggleMenu}><i class="fa fa-bars"></i>
                     </button>
@@ -45,6 +46,7 @@ class Nav extends Component {
                                 <Link to='/signup'><button className='nav-link-menu'> Register </button></Link>
                                 <Link to='/dashboard'><button className='nav-link-menu'> Dashboard </button></Link>
                                 <Link to='/TeamPage'><button className='nav-link-menu'> Team Page </button></Link>
+                                <Link to='/donate'><button className='nav-link'> Donate! </button></Link>
                                 <Link to={`/TeamManagement/${this.props.state.team.team[0] ? this.props.state.team.team[0].id : 999999}`}><button className='nav-link-menu'>TeamManagement</button></Link>
                                 <Link to='/login'><button className='nav-link-menu'> Login </button></Link>
                                 <button onClick={this.localLogOut} className="nav-link-menu">Logout</button>

@@ -9,6 +9,8 @@ import TeamPage from './components/Team/TeamPage';
 import TeamManagement from './components/Team/TeamManagement';
 import TeamSignup from './components/Signup/TeamSignup';
 import TeamUsersLoad from'./components/Team/TeamUsersLoad';
+import Donate from './components/Donate/Donate'
+import Heroes from './components/Heroes/Heroes'
 export default (
   <Switch>
     <Route exact path='/' component={Home}/>
@@ -19,6 +21,8 @@ export default (
     <Route path= '/teamManagement' component={TeamManagement}/>
     <Route path='/teamSignup' component={TeamSignup}/>
     <Route path='/usersList/:teamId' component={TeamUsersLoad}/>
+    <Route path='/donate' component={Donate}/>
+    <Route path='/heroes' component={Heroes}/>
 
   </Switch>
 );

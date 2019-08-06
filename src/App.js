@@ -5,6 +5,7 @@ import routes from "./routes"
 import Nav from './components/Nav/Nav';
 import Donate from './components/Donate/Donate'
 import StripeCheckout from 'react-stripe-checkout'
+import './reset.css'
 // testing git
 class App extends Component {
   constructor() {

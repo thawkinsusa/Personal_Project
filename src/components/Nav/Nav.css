@@ -30,7 +30,7 @@
     margin-left: 30px;
     margin-top: 8px;
     font-size: 32pt;
-    height: 7vh;
+    height: 5vh;
     width: 50vh;
     border-radius: 20px;
     color: rgb(255, 255, 255);
@@ -65,18 +65,20 @@
     height: 80px;
     width: 300px;
     border-radius: 4px;
-    background-color: rgb(12, 11, 11);
+    background-color: rgb(0, 0, 0);
     color: white;
     border-style: none;
 
 }
 
 .nav-link-menu:hover {
-    background-color: rgb(13, 95, 128);
+    background-color: rgb(108, 236, 166);
 }
-
-.nav-link-menu {
+.link-buttons{
     text-decoration: none;
+}
+.nav-link-menu {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +87,7 @@
     height: 40px;
     width: 150px;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.938);
+    background-color: rgba(2, 2, 2, 0.938);
     color: white;
     border-style: none;
 }
