@@ -1,11 +1,12 @@
 .hero-list{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
  }
+
  .add-hero{
   background: transparent;
   border: none !important;
@@ -44,20 +45,22 @@
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     transform: scale(3.5);
+    z-index: 1;
   }
   .image-container:hover:before, .image-container:focus:before, .image-container:active:before {
     opacity: 1;
+    z-index: 1;
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
   }
 .hero{
     color: rgba(255, 255, 255, 0);
     display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    align-items: space-around;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
     background-color: rgba(27, 26, 26, 0);
     height: 75px;
     
@@ -67,3 +70,4 @@
     width: 50px;
     border-radius: 20px;
 }
+

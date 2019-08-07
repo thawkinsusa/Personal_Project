@@ -4,15 +4,7 @@
     align-items: center;
     color: white;
 }
-.hero-container{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top:50px;
-    right: 480px;
-    width: 400px;
-    height: 700px;
-}
+
 .teamManagement-container {
     width: 1400px;
     height: 800px;

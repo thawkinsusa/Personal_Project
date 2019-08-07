@@ -1,9 +1,13 @@
 .hero-container{
-    color:white;
-	display: flex;
+	position: relative;
+    display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: stretch;
 	align-content: stretch;
-}
+    height: 200px;
+	margin-left: 200px;
+	margin-top: 200px;
+	background-color: black;
+  }
