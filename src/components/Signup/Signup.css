@@ -11,12 +11,9 @@
 
 .sign-up-container {
     width: 30vw;
-    height: 55vh;
+    height: 61vh;
     background-color: rgba(43, 39, 39, 0.774);
-    /* position: absolute;
-margin: 0;
-top: 200px;
-left: 700px; */
+
     border-radius: 3px;
     border-style: line;
     border-width: 2px;
@@ -58,6 +55,22 @@ left: 700px; */
     width: 200px;
 }
 
+.sign-button {
+    background-color: rgb(77, 67, 226);
+    border-style: none;
+    border-radius: 20px;
+    width: 275px;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    font-size: 28px;
+    color: #FFFFFF;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 768px) {
