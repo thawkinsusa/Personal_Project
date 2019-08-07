@@ -34,7 +34,7 @@ class Donate extends Component {
 
     return (
       <div className='stripe-container'>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px' }}>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '0px' }}>
           <StripeCheckout
             name='CLass'
             image={imageUrl}

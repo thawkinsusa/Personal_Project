@@ -53,7 +53,7 @@ class Dashboard extends Component {
                         <button className='dashboard-links'> Team Search </button>
                     </div>
                     <div className='heroes-container-dash'>
-                        <TeamMember/>
+                        <TeamMember className='hide'/>
                     </div>
                 </div>
             </div>
