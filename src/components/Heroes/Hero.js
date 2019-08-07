@@ -17,7 +17,6 @@ class Hero extends Component {
 
 
         return (
-            <div className="heros-container">
 
                 <div className='hero-list'>
 
@@ -26,7 +25,6 @@ class Hero extends Component {
                     </div>
                 </div>
 
-            </div>
         )
     }
 

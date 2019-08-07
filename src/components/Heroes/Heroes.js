@@ -25,17 +25,15 @@ class Heroes extends Component {
         let { heroes } = this.state
 
         return (
-            <div className="hero-container">
 
 
-                <div>{heroes.map(hero => {
+                <div className='hero-container'>{heroes.map(hero => {
                     return (<div>
                         <Hero hero={hero} key={heroes.id} ></Hero>
                     </div>)
                 })}
                 </div>
 
-            </div>
 
         )
     }

@@ -37,14 +37,12 @@ class TeamManagement extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='hero-container'>
-                                    <Heroes className='teamManagement-heroes'></Heroes>
-                                </div>
                             </div>
                             <div className='teamManagement-user-info-top-container'>
                                 <div className='teamManagement-db-info'>Memeber since: {team.team[0].team_creation_date}</div>
                                 <div className='teamManagement-db-info'>team:{team.team[0].team_name}</div>
                             </div>
+                            <Heroes />
                         </div>
                     </div>
                 </div>
