@@ -42,9 +42,7 @@
 
 }
 
-.heroes-container-dash{
-    display: hide;
-}
+
 .dashboard-img {
     margin: 0px 0px 0px 15px;
     width: 120px;
@@ -52,9 +50,7 @@
     background-color: rgba(0, 0, 0, 0.507);
     border-radius: 120px;
 }
-.team-member{
-    display:hide;
-}
+
 .dashboard-img-container {
     margin: 20px 10px 20px 20px;
     display: flex;
@@ -131,7 +127,7 @@
     justify-content: center;
     border-width: .5px;  
     background-color: rgba(0, 0, 0, 0);
-    margin-right: px;
+    margin-right: 10px;
  }
 
 @media screen and (max-width: 768px) {
@@ -176,6 +172,12 @@
     margin-top: 70px;
     height: 670px;
     background-color: rgba(0, 0, 0, 0.856);
+}
+.dashboard-menu-options{
+    display: none;
+}
+.heroes-container-dash{
+    display:none;
 }
 }
 

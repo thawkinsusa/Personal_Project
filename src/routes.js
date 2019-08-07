@@ -11,7 +11,7 @@ import TeamSignup from './components/Signup/TeamSignup';
 import TeamUsersLoad from'./components/Team/TeamUsersLoad';
 import Donate from './components/Donate/Donate'
 import Heroes from './components/Heroes/Heroes'
-import BattleDisplay from './components/Team/TeamDisplay'
+import BattleDisplay from './components/Team/BattleDisplay'
 export default (
   <Switch>
     <Route exact path='/' component={Home}/>

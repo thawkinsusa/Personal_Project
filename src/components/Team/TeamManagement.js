@@ -45,6 +45,7 @@ class TeamManagement extends Component {
                             <Heroes />
                         </div>
                     </div>
+                    <button className='kick'><Link to='/battleDisplay'>BATTLE</Link></button>
                 </div>
             )
         } else {
@@ -53,7 +54,7 @@ class TeamManagement extends Component {
                 <Link to='/TeamSignup'>
                     <div className='team-captain'>
                     </div>
-                    <button>Create Team</button>
+                    <button className='button-create'>Create Team</button>
                 </Link>
             </div>)
         }
